@@ -1,4 +1,5 @@
-# OHSIHA
+# HT vaihe 1
+
 
 ### Toimintaympäristö ja sen valinta
 
@@ -21,11 +22,12 @@ XAMPP:n ensimmäisellä käynnistyskerralla ohjelma kysyy kielen, jota käytetä
 Ongelmaksi tuli alussa se, että en tiennyt ollenkaan mihin php-tiedostot tuli asettaa, joita halusi palvelimella käyttää. Löysin oikean tiedostopolun etsimällä XAMPP:n asennuskansiosta "index.php", joka toimii oletussivuna palvelimelle. Oletussivulla näkyi aluksi Apachen tervetuloa sivu, jonka nähdessään tiesi palvelimen toimivan. Tässä vaiheessa ajattelin tehdä Hello world -ohjelman, jolla testaan palvelimen toiminnan omilla php-tiedostoilla. Loin kansioon helloworld.php tiedoston, jonka koodi löytyy alta.
 ```
 <?php
-   echo ‘Hello world’;
+   echo ("Hello world");
 ?>
 ```
 Tähän ohjelmaan pääsi käsiksi kirjoittamalla selaimeen localhost/helloworld.php. Ensimmäinen ohjelma on helposti luotu ja toimi kuten odotettukin. Syntaksi php:ssä on hieman erilaista, mihin olen tottunut, mutta uskon kuitenkin sen selkenevän harjoitustyön kulkiessa eteenpäin. 
 
+Työ löytyy kokonaisuudessaan omasta [gitistäni](https://github.com/a-BRout/OHSIHA).
 
 ---
 ### Harjoitustyön sisältö
@@ -33,6 +35,8 @@ Tähän ohjelmaan pääsi käsiksi kirjoittamalla selaimeen localhost/helloworld
 Harjoitustyöni tulee olemaan palvelu, joka hakee [Google Sheets](https://www.google.com/sheets/about/) palvelusta taulukon, joka sisältää kerättyjä auton polttoainekulutuksen seurannan lukuja. Olen itse kerännyt tietoa yli kahden vuoden ajan auton polttoaineen kulutuksesta ja ajattelin nyt tehdä kerättyyn dataan visualisoinnin ja seurannan web-palvelun kautta.
 
 Harjoitustyö tulee sisältämään muutaman eri osa-alueen: kirjautuminen palveluun, taulukon haku Google Sheets API:sta, taulukon tallentaminen SQL tietokantaan, taulukon tietojen muuttaminen ja tiedoista tehty visuaalinen representaatio. 
+
+
 
 ### Käytettyjä resursseja:
 
