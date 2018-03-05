@@ -26,7 +26,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
         <br><br>
 <div id="container">
     <p><a href="SheetChoose.php" class="btn btn-default">Get Data from Google Sheets</a></p>
-    <p><a href="Tyhja.php" class="btn btn-default">Got my own data</a></p>
+    <p><a href="graph.php" class="btn btn-default">Got my own data</a></p>
 </div>
     </div>
     <p><a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a></p>
