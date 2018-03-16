@@ -1,9 +1,17 @@
 <?php
+
+// Initialize the session
+session_start();
+
+// If session variable is not set it will redirect to login page
+if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+  header("location: login.php");
+  exit;
+}
 error_reporting(0);
 require_once __DIR__.'/testi/vendor/autoload.php';
 require_once __DIR__.'/functions.php';
 
-session_start();
 
 $client = new Google_Client();
 $client->setAuthConfig('client_secret.json');

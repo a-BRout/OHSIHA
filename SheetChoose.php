@@ -1,13 +1,14 @@
-<!-- <form action="/SheetValuesGET.php" method="post">
-  Sheet ID:<br>
-  <input type="text" name="Sheet_ID"
-	pattern="[a-zA-Z0-9-_]+" title="Syötä käypä Google Sheets ID"><br>
-  Sheet Range:<br>
-  <input type="text" name="Sheet_Range"
-	pattern="[a-zA-Z0-9]+![A-Z][1-9]:[A-Z][1-9]+" title="Syötä taulukon nimi ja paikka"><br><br>
-	<input type="submit" value="Submit">
-</form> -->
 
+<?php
+// Initialize the session
+session_start();
+
+// If session variable is not set it will redirect to login page
+if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+  header("location: login.php");
+  exit;
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
